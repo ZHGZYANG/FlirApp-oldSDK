@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    tools:context=".RecordProcess">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/tuneButtonRp"
+            style="?metaButtonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onTuneClicked"
+            android:text="@string/performTuning" />
+
+
+
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/msx_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="fitCenter" />
+
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/feetmack" />
+
+        <Chronometer
+            android:id="@+id/itimer"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:format="%s"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/batteryChargeIndicatorRp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="2"
+            android:src="@android:drawable/ic_lock_idle_charging"
+            android:visibility="invisible"
+            app:tint="@color/accent_material_light" />
+
+        <TextView
+            android:id="@+id/battery"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:gravity="end"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="95%     " />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton4"
+            android:layout_width="59dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            app:backgroundTint="@color/red" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--    tools:context=".RecordProcess"-->
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:gravity="center"
+        android:text="@string/status"
+        android:textSize="40sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp">
+
+        <ImageView
+            android:id="@+id/msx_image2"
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            android:contentDescription="image with IR and visual data mixed" />
+
+        <ImageView
+            android:id="@+id/imageView122"
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/feetmack" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/photoCapture2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="capture"
+            android:text="@string/photo_capture" />
+
+        <Button
+            android:id="@+id/videoRecord2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="video"
+            android:text="@string/video_record" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/connect2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="connect"
+            android:text="@string/connect" />
+
+        <Button
+            android:id="@+id/disconnect2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="disconnect"
+            android:text="@string/disconnect" />
+    </LinearLayout>
+
+</LinearLayout>
