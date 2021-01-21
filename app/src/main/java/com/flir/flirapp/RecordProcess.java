@@ -386,8 +386,7 @@ public class RecordProcess extends AppCompatActivity implements FrameProcessor.D
         cameraHandler = CameraDetected.cameraHandler;
 
         RenderedImage.ImageType defaultImageType = RenderedImage.ImageType.BlendedMSXRGBA8888Image;
-//        RenderedImage.ImageType defaultImageType =RenderedImage.ImageType.ThermalLinearFlux14BitImage;
-        frameProcessor = new FrameProcessor(this, this, EnumSet.of(RenderedImage.ImageType.ThermalRadiometricKelvinImage), true);
+        frameProcessor = new FrameProcessor(this, this, EnumSet.of(RenderedImage.ImageType.ThermalLinearFlux14BitImage), true);
         frameProcessor.setGLOutputMode(defaultImageType);
 
         thermalSurfaceView = (GLSurfaceView) findViewById(R.id.msx_image);

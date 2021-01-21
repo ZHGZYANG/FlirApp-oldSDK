@@ -88,13 +88,13 @@ public class CameraDetected extends AppCompatActivity {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        try {
-                                            cameraHandler.simulator(CameraDetected.this);
-                                        } catch (Exception e) {
-                                           runOnUiThread(()->{
-                                               showMessage.show("Setting simulator error. "+e);
-                                           });
-                                        }
+//                                        try {
+//                                            cameraHandler.simulator(CameraDetected.this);
+//                                        } catch (Exception e) {
+//                                           runOnUiThread(()->{
+//                                               showMessage.show("Setting simulator error. "+e);
+//                                           });
+//                                        }
                                         imageview.setVisibility(View.VISIBLE);
                                         textview.setVisibility(View.VISIBLE);
                                     }
